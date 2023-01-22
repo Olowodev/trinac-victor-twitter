@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Header from '../containers/header/Header'
 import Footer from '../containers/footer/Footer'
 import About from '../containers/about/About'
+import Services from '../containers/services/Services'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <main className={styles.main}>
         <Header />
         <About />
+        <Services />
         <Footer />
       </main>
     </div>
