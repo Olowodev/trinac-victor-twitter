@@ -5,6 +5,7 @@ import Header from '../containers/header/Header'
 import Footer from '../containers/footer/Footer'
 import About from '../containers/about/About'
 import Services from '../containers/services/Services'
+import Works from '../containers/work/Works'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <main className={styles.main}>
         <Header />
         <About />
+        <Works />
         <Services />
         <Footer />
       </main>

@@ -14,7 +14,7 @@ const Navbar = () => {
                 <div>
                     <p>Works<sup>5</sup></p>
                 </div>
-                <Button text='GO BACK' />
+                <Button text='GET IN TOUCH' />
             </div>
         </div>
     );
