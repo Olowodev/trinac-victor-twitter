@@ -99,6 +99,7 @@ const Works = () => {
                             </div>
                         </div>
                     </div>
+                    {/*just for my streaks*/}
                     <div onMouseLeave={()=>onMouseLeave(opRef, opRefLine)} className={styles.work} onMouseEnter={()=>onMouseEnter(opRef, opRefLine)}>
                         <div ref={opRefLine}></div>
                         <p>OPINATIO</p>
