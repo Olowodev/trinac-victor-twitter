@@ -1,6 +1,7 @@
 import styles from './works.module.css'
 import {gsap} from 'gsap'
 import { useEffect, useRef } from 'react'
+import Link from 'next/link'
 
 const Works = () => {
 
@@ -81,25 +82,29 @@ const Works = () => {
                     </div>
                 </div>
                 <div className={styles.rightWorks}>
+                    <Link href={'/works/1'}>
                     <div className={styles.work} onMouseLeave={()=>onMouseLeave(mocRef, mocRefLine)} onMouseEnter={()=>onMouseEnter(mocRef, mocRefLine)}>
                         <div ref={mocRefLine}></div>
                         <p>MOCVIEW</p>
                         <div ref={mocRef} className={styles.imgWrapper}>
                             <div className={styles.imgInner}>
-                                <img src='mocview.png' />
+                                <img src='/mocview.png' />
                             </div>
                         </div>
                     </div>
+                    </Link>
+                    <Link href={'/works/2'}>
                     <div onMouseLeave={()=>onMouseLeave(jabRef, jabRefLine)} className={styles.work} onMouseEnter={()=>onMouseEnter(jabRef, jabRefLine)}>
                         <div ref={jabRefLine}></div>
                         <p>JABBURR</p>
                         <div ref={jabRef} className={styles.imgWrapper}>
                             <div className={styles.imgInner}>
-                                <img src='jabburr.jpg' />
+                                <img src='/jabburr.jpg' />
                             </div>
                         </div>
                     </div>
-                    {/*just for my streaks*/}
+                    </Link>
+                    <Link href={'/works/3'}>
                     <div onMouseLeave={()=>onMouseLeave(opRef, opRefLine)} className={styles.work} onMouseEnter={()=>onMouseEnter(opRef, opRefLine)}>
                         <div ref={opRefLine}></div>
                         <p>OPINATIO</p>
@@ -109,6 +114,8 @@ const Works = () => {
                             </div>
                         </div>
                     </div>
+                    </Link>
+                    <Link href={'/works/4'}>
                     <div onMouseLeave={()=>onMouseLeave(rajRef, rajRefLine)} className={styles.work} onMouseEnter={()=>onMouseEnter(rajRef, rajRefLine)}>
                         <div ref={rajRefLine}></div>
                         <p>RAJNETTI</p>
@@ -118,6 +125,8 @@ const Works = () => {
                             </div>
                         </div>
                     </div>
+                    </Link>
+                    <Link href={'/works/5'}>
                     <div onMouseLeave={()=>onMouseLeave(getRef, getRefLine)} className={styles.work} onMouseEnter={()=>onMouseEnter(getRef, getRefLine)}>
                         <div ref={getRefLine}></div>
                         <p>GET-HIRING</p>
@@ -127,6 +136,7 @@ const Works = () => {
                             </div>
                         </div>
                     </div>
+                    </Link>
                 </div>
             </div>
         </div>

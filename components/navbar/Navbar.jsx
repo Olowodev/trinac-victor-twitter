@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../button/Button";
 import styles from './navbar.module.css'
 
@@ -9,10 +10,10 @@ const Navbar = () => {
                     <img />
                 </div>
                 <div>
-                    <p>About</p>
+                    <Link href='/'>About</Link>
                 </div>
                 <div>
-                    <p>Works<sup>5</sup></p>
+                    <Link href='/works'>Works<sup>5</sup></Link>
                 </div>
                 <Button text='GET IN TOUCH' />
             </div>
