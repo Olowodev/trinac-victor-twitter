@@ -12,8 +12,8 @@ import { useState } from 'react'
 export default function Home() {
   const [introOut, setIntroOut] = useState(false)
   const [offset, setOffset] = useState({
-    top: '',
-    left: ''
+    top: null,
+    left: null
 })
   return (
     <div className={styles.container}>
