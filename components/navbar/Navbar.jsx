@@ -10,7 +10,7 @@ const Navbar = () => {
                     <img />
                 </div>
                 <div>
-                    <Link href='/'>About</Link>
+                    <a href='/#about'>About</a>
                 </div>
                 <div>
                     <Link href='/works'>Works<sup>5</sup></Link>

@@ -110,7 +110,7 @@ const Works = () => {
                         <p>OPINATIO</p>
                         <div ref={opRef} className={styles.imgWrapper}>
                             <div className={styles.imgInner}>
-                                <img />
+                                <img src='/opinatio.jpg' />
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,7 @@ const Works = () => {
                         <p>RAJNETTI</p>
                         <div ref={rajRef} className={styles.imgWrapper}>
                             <div className={styles.imgInner}>
-                                <img />
+                                <img src='/rajnetti.jpg' />
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@ const Works = () => {
                         <p>GET-HIRING</p>
                         <div ref={getRef} className={styles.imgWrapper}>
                             <div className={styles.imgInner}>
-                                <img />
+                                <img src='/getHiring.jpg' />
                             </div>
                         </div>
                     </div>

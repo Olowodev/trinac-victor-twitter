@@ -14,7 +14,6 @@ const Intro = ({introOut, text, setIntroOut, offset}) => {
     useEffect(()=>{
       if (offset) {
         setNoOffset(false)
-        console.log('tedt')
       }
     }, [])
     return (

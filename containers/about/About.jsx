@@ -2,7 +2,7 @@ import styles from './about.module.css'
 
 const About = () => {
     return (
-        <div className={styles.about}>
+        <div id='about' className={styles.about}>
             <div className={styles.aboutCont}>
                 <div className={styles.aboutLeft}>
                     <p>WHO ARE WE?</p>
