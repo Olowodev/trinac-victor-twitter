@@ -6,9 +6,11 @@ const Navbar = () => {
     return (
         <div className={styles.navbar}>
             <div className={styles.navCont}>
+                <Link href='/'>
                 <div>
-                    <img />
+                    <img style={{width: '30px'}} src="/logo.svg" />
                 </div>
+                </Link>
                 <div>
                     <a href='/#about'>About</a>
                 </div>
