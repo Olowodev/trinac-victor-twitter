@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './intro.module.css'
 
-const Intro = ({introOut, text, setIntroOut, offset}) => {
+const Intro = ({introOut, text, setIntroOut, offset, height}) => {
     const [isLoaded, setIsLoaded] = useState(false)
     const [noOffset, setNoOffset] = useState(true)
 
@@ -26,8 +26,8 @@ const Intro = ({introOut, text, setIntroOut, offset}) => {
                 })
             }}
         >
-            <div style={{display: noOffset ? 'none' : 'block'}} className={`${isLoaded && styles.relative} ${styles.cont}`}>
-                <h1 style={{top: offset.top, left: offset.left}} className={styles.h1}>WE BUILD APPS YOUR USERS LOVE</h1>
+            <div style={{top: offset.top, left: offset.left, height: height}} className={`${isLoaded && styles.relative} ${styles.cont}`}>
+                <h1 style={{ display: noOffset ? 'none' : 'block'}} className={styles.h1}>{text}</h1>
             </div>
         </div>
     );

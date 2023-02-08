@@ -68,7 +68,7 @@ const Works = () => {
         
     }, [])
     return (
-        <div className={styles.works}>
+        <div id='work' className={styles.works}>
             <div className={styles.worksCont}>
                 <div className={styles.leftWorks}>
                     <div>

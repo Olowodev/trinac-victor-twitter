@@ -15,7 +15,7 @@ const Navbar = () => {
                     <a href='/#about'>About</a>
                 </div>
                 <div>
-                    <Link href='/works'>Works<sup>5</sup></Link>
+                    <a href='#work'>Works<sup>5</sup></a>
                 </div>
                 <Button text='GET IN TOUCH' />
             </div>
