@@ -8,7 +8,7 @@
 .footCont {
     display: flex;
     flex-direction: column;
-    padding: 0 60px;
+    padding: 0 4.4%;
     height: 100%;
 }
 
