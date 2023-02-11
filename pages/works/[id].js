@@ -68,19 +68,19 @@ const WorkPage = () => {
             <div className={styles.wCont}>
                 <div className={styles.header}>
                     <div>
-                        <Intro height={'120px'} text={workData.title} offset={offset} setIntroOut={setIntroOut} introOut={introOut} />
+                        <Intro height={'120px'} text={workData?.title} offset={offset} setIntroOut={setIntroOut} introOut={introOut} />
                         <Navbar />
                         <div className={styles.head}>
                             <div className={styles.imgWrapper}>
                                 <div className={styles.imgInner}>
-                                    <img src={workData.img1} />
+                                    <img src={workData?.img1} />
                                 </div>
                             </div>
-                            <h1 className={styles.h1} ref={ref}>{workData.title}</h1>
+                            <h1 className={styles.h1} ref={ref}>{workData?.title}</h1>
                             <div className={styles.headRight}>
                                 <div className={styles.headContent}>
                                     <p>DESCRIPTION</p>
-                                    <p>{workData.title} is an ecommerce platform focused on creating men suits and other clothing materials</p>
+                                    <p>{workData?.title} is an ecommerce platform focused on creating men suits and other clothing materials</p>
                                 </div>
                                 <div className={styles.headContent}>
                                     <p>ROLES</p>
@@ -96,18 +96,18 @@ const WorkPage = () => {
                 <div className={styles.firstGallery}>
                     <div className={styles.gImgWrapper}>
                         <div>
-                            <img src={workData.img2} />
+                            <img src={workData?.img2} />
                         </div>
                     </div>
                     <div className={styles.gImgWrapper}>
                         <div>
-                            <img src={workData.img3} />
+                            <img src={workData?.img3} />
                         </div>
                     </div>
 
                 </div>
                 <div className={styles.moreInfo}>
-                    <p className={styles.leftInfo}>The cool guys at {workData.title} reached out to us to help them build a web and mobile based application for their company operations.</p>
+                    <p className={styles.leftInfo}>The cool guys at {workData?.title} reached out to us to help them build a web and mobile based application for their company operations.</p>
                     <div>
                         <p>WHAT WE DID</p>
                         <p>Ad in nulla eiusmod eiusmod. Est consectetur excepteur aute nostrud tempor eu sit aliquip velit aute minim deserunt nostrud. Sit ut occaecat anim ex laboris consequat nulla adipisicing. Ad adipisicing dolor elit irure ad aliqua est. Dolor eiusmod dolor id tempor nisi adipisicing id sint anim reprehenderit exercitation sit est. Irure qui ad exercitation in esse irure proident est velit. Sunt ut nostrud incididunt labore do. Incididunt quis non eu nisi esse sunt commodo qui consequat. Adipisicing id nulla dolore esse quis aute elit amet. Exercitation qui dolor anim elit quis aliquip do dolor ipsum sint exercitation consectetur.</p>
@@ -115,14 +115,14 @@ const WorkPage = () => {
                 </div>
                 <div className={styles.secondGallery}>
                     <div>
-                        <img src={workData.img4} />
+                        <img src={workData?.img4} />
                     </div>
                     <p>Ea reprehenderit aute elit incididunt eiusmod aliqua qui voluptate velit quis consequat dolor minim ex. Elit nisi tempor aliquip laborum. Quis Lorem consequat exercitation occaecat veniam anim labore magna. Magna nostrud anim voluptate qui qui. Tempor ipsum Lorem laborum magna eiusmod in non esse. Irure elit in labore ipsum sunt sint consequat enim adipisicing. Incididunt ad commodo culpa consequat id in culpa.</p>
                 </div>
                 <div className={styles.thirdGallery}>
                     <div className={styles.gImgWrapper}>
                         <div className={styles.gImgInner}>
-                            <img src={workData.img5} />
+                            <img src={workData?.img5} />
                         </div>
                     </div>
                 </div>
