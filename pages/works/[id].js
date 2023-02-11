@@ -11,16 +11,27 @@ import { getWorkDetails, getWorkIdList } from "../../data";
 
 
 
-const WorkPage = ({workData}) => {
+const WorkPage = () => {
     const [introOut, setIntroOut] = useState(false)
     const [offset, setOffset] = useState({
         top: null,
         left: null
     })
+    const [workData, setWorkData] = useState({})
     const ref = useRef()
     const [loading, setLoading] = useState(false)
     const router = useRouter()
 
+    const {id} = router.query
+    useEffect(() => {
+        const getData = async () => {
+            const res = await getWorkDetails(id)
+            console.log(res)
+            setWorkData(res)
+        }
+
+        getData()
+    }, [id])
     useEffect(() => {
         router.events.on('routeChangeStart', ()=> {
             setLoading(true)
@@ -125,21 +136,21 @@ const WorkPage = ({workData}) => {
     }
 }
 
-export async function getStaticPaths() {
-    const paths = await getWorkIdList()
-    return {
-        paths,
-        fallback: false
-    }
-}
+// export async function getStaticPaths() {
+//     const paths = await getWorkIdList()
+//     return {
+//         paths,
+//         fallback: false
+//     }
+// }
 
-export async function getStaticProps({ params }) {
-    const workData = await getWorkDetails(params.id)
-    return {
-        props: {
-            workData
-        }
-    }
-}
+// export async function getStaticProps({ params }) {
+//     const workData = await getWorkDetails(params.id)
+//     return {
+//         props: {
+//             workData
+//         }
+//     }
+// }
 
 export default WorkPage;
